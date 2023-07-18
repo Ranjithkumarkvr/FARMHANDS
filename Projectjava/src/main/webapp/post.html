@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            width: 550px;
+            height: 600px;
+            background:linear-gradient(grey,black);     
+            display: grid; 
+            justify-content: center;
+            border-radius: 50px;
+            margin:10px;
+            margin-left: 30%;
+            
+        }
+        
+        .con label{
+            display: block;
+            font-size: 30px;
+        }
+        .con input{
+            font-size: 30px;
+        }
+        select{
+            font-size: 30px;
+            width: 375px;
+        }
+        button{
+            margin-top: 30px;
+            font-size: 30px;
+            margin-left:150px ;
+
+        }
+        button:hover{
+            color: red;
+        }
+        h2{
+        color: honeydew;
+        }
+    </style>
+    <link rel="StyleSheet" href="Style.css">
+</head>
+<body>
+    <div class="header">
+    <div class="logo">
+       <span>FARM </span>HANDS
+    </div>
+    <div id="navbar">
+        <ul> 
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html#ab">ABOUT US</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+        <li><a href="register.html">REGISTER</a></li>
+        <li><a href="Postpage.jsp">WORKER DETAILS</a></li>
+        </ul>
+    </div>
+
+    </div>
+    <div class="con">
+        <form action="Postpage.jsp" method="post">
+          <center>  <h2>Enter the details...</h2></center>
+         <div>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required>
+            <label for="Phnumber">ContactNumber</label>
+            <input type="number" name="phnumber" id="phnumber" maxlength="10" required>
+         </div>
+         <div>
+            <label for="location">District</label>
+            <input type="text" name="location" id="location" required>
+            <label for="members">TotalMembers</label>
+            <input type="number" name="members" id="members" required>
+         </div>
+         <div>
+            <label for="address">Address</label>
+            <input type="text" name="address" id="address"></div><br><div>
+            <select name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+         </div>
+         <div>
+         <button type="submit">Post</button>
+           </div>
+        </form>
+    </div>
+     
+     <div class="footer">
+        <p>@ Copyrights 2023 FARMHANDS. All rights reserved</p>
+      <marquee> <h3>Designed by Ranjith Kvr</h3></marquee> 
+    </div>
+</body>
+</html>

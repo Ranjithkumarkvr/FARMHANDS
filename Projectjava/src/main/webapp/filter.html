@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.loc{
+width:400px;
+height: 100px;
+  background-color:grey;
+  display:grid;
+  justify-content:space-around;
+  margin:10%;
+  border-radius:10px;
+}
+.loc label{
+  display:block;
+  color: blue;
+  font-size:20px;
+  margin-top:10px; 
+}
+.loc input{
+   font-size: 20px;
+}
+button:hover{
+  color:red;
+}
+
+
+
+</style>
+<link rel="StyleSheet" href="Style.css">
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">
+       <span>FARM </span>HANDS
+    </div>
+    <div id="navbar">
+        <ul> 
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html#ab">ABOUT US</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+        <li><a href="register.html">REGISTER</a></li>
+        <li><a href="Postpage.jsp">WORKER DETAILS</a></li>
+        </ul>
+    </div>
+
+    </div>
+<div class="loc">
+<form action="FilterPage.jsp" method="post">
+<label for="location">Enter the location</label>
+<input type="text" name="location" id="location" required>
+<button type="submit">Submit</button>
+</div>
+</form>
+ <div class="footer">
+        <p>@ Copyrights 2023 FARMHANDS. All rights reserved</p>
+      <marquee> <h3>Designed by Ranjith Kvr </h3></marquee> 
+    </div>
+</body>
+</html>

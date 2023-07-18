@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        .frm{
+            width: 500px;
+            height: 600px;
+            color: azure;
+            background-color:rgba(0,0,0,.5);
+            border-radius: 20px;
+            margin-bottom: 10px;
+            margin-left: 30%;
+        }
+        .frm div{
+            margin: 30px;
+        }
+        .input input{
+              width: 90%;
+              margin-left: 15px;
+              font-size: 20px;    
+        }
+        .slc label{
+            margin: 13px;
+            font-size: 20px;
+        }
+        .slc select{
+            width: 30%;
+              font-size: 20px;
+        }
+        .rdo label{
+             font-size: 20px;
+             margin: 10px;
+        }
+        .rdo input{
+            margin-left: 15px;
+        }
+        .btn button{
+              font-size: 20px;
+              margin-left: 20px;
+        }
+        button:hover{
+         color: red;
+        }
+         
+    </style>
+    <link rel="StyleSheet" href="Style.css">
+</head>
+<body>
+<div class="header">
+    <div class="logo">
+       <span>FARM </span>HANDS
+    </div>
+    <div id="navbar">
+        <ul> 
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html#ab">ABOUT US</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+        <li><a href="register.html">REGISTER</a></li>
+        </ul>
+    </div>
+
+    </div>
+    <div class="frm">
+        <form action="RegisterPage.jsp" method="Post">
+            <center><h2>SignUp</h2></center>
+            <div class="input">
+                <input type="text" name="firstname" id="firstname" placeholder="Fistname"><br><br>
+                <input type="text" name="lastname" id="lastname" placeholder="Lastname">
+            </div>
+            <div class="input">
+                <input type="number" name="phnumber" id="phnumber" maxlength="10" placeholder="PhoneNumber"  required>
+            </div>
+            <div class="input">
+                <input type="password" name="password" id="password" placeholder="Password"   minlength="8" required>
+            </div>
+            <div class="input"> 
+                <input type="number" name="age" id="age" placeholder="Age">
+            </div>
+            <div class="input">
+                <input type="text" name="address" id="address" placeholder="Address">
+            </div>
+            <div class="slc">
+                <label for="nature">Occupation</label>
+                <select name="nature" id="nature" required>
+                 <option value="Farmer">Farmer</option>
+                 <option value="Worker">Worker</option>
+                </select>
+            </div>
+            <div class="rdo">
+                <input type="radio" name="gender" id="Male" value="male">
+                <label for="gender" >Male</label> 
+                <input type="radio" name="gender" id="female" value="female" >
+                <label for="gender">Female</label>
+                 </div>
+                 <div class="btn">
+                    <button type="submit" name="submit" id="submit">SignUp</button>
+                    <button type="reset">Reset</button>
+                 </div>
+
+        </form>
+    </div>
+     <div class="footer">
+        <p>@ Copyrights 2023 FARMHANDS. All rights reserved</p>
+      <marquee> <h3>Designed by Ranjith Kvr </h3></marquee> 
+    </div>
+</body>
+</html>
